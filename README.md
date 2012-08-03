@@ -5,7 +5,7 @@ php-weather-forecast-cn
 
 使用提示
 --------
-1. 城市代码可从中国天气网(http://www.weather.com.cn/)查得。
+1. 城市代码可从[中国天气网]查得。
 
 
 使用注意
@@ -18,4 +18,7 @@ php-weather-forecast-cn 遵循 Apache许可证2.0版 发布。
 
 发布页面
 --------
-http://lyonna.me/2012/01/php-weather-forecast/
+[php 天气预报代码]
+
+[中国天气网]: http://www.weather.com.cn/
+[php 天气预报代码]: http://lyonna.me/2012/01/php-weather-forecast/
