@@ -5,7 +5,7 @@ php-weather-forecast-cn
 
 使用提示
 --------
-1. 城市代码可从中国天气网(http://www.weather.com.cn)查得。
+1. 城市代码可从中国天气网(http://www.weather.com.cn/)查得。
 
 
 使用注意
