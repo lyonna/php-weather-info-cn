@@ -10,16 +10,17 @@ php-weather-forecast-cn
 
 更新日志
 --------
-2012-08-22
+* 2012-08-22
 * 取消了对 php-cURL 扩展库的强制依赖
 
 许可协议
 --------
-php-weather-forecast-cn 遵循 Apache许可证2.0版 发布。
+php-weather-forecast-cn 遵循 [Apache许可证2.0版] 发布。
 
 发布页面
 --------
 [php 天气预报代码]
 
 [中国天气网]: http://www.weather.com.cn/
+[Apache许可证2.0版]: http://www.apache.org/licenses/LICENSE-2.0
 [php 天气预报代码]: http://lyonna.me/2012/01/php-weather-forecast/
