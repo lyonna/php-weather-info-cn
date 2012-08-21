@@ -1,12 +1,17 @@
 <?php
   function getWeatherData($cityid) {
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'http://m.weather.com.cn/data/'.$cityid.'.html');
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
-    do {
-      $weatherdata = curl_exec($ch);
-    } while ($weatherdata == '');
+    if (!function_exists('curl_init')) {
+      $weatherdata = file_get_contents('http://m.weather.com.cn/data/'.$cityid.'.html');
+    }
+    else {
+      $ch = curl_init();
+      curl_setopt($ch, CURLOPT_URL, 'http://m.weather.com.cn/data/'.$cityid.'.html');
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
+      do {
+        $weatherdata = curl_exec($ch);
+      } while ($weatherdata == '');
+    }
     curl_close($ch);
     $weatherdata = json_decode($weatherdata, TRUE);
     return $weatherdata['weatherinfo'];
