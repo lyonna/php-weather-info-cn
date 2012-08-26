@@ -1,7 +1,9 @@
 <?php
   function getWeatherData($cityid) {
     if (!function_exists('curl_init')) {
-      $weatherdata = file_get_contents('http://m.weather.com.cn/data/'.$cityid.'.html');
+      do {
+        $weatherdata = file_get_contents('http://m.weather.com.cn/data/'.$cityid.'.html');
+      } while ($weatherdata == '');
     }
     else {
       $ch = curl_init();
