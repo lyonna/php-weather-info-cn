@@ -1,5 +1,5 @@
-php-weather-forecast-cn
-=======================
+php-weather-info-cn
+===================
 
 使用 php 编写的、自动从中国天气网 JSON API 获取天气数据的网页
 
@@ -26,7 +26,7 @@ php-weather-forecast-cn
 
 许可协议
 --------
-php-weather-forecast-cn 遵循 [Apache许可证2.0版] 发布。
+php-weather-info-cn 遵循 [Apache许可证2.0版] 发布。
 
 发布页面
 --------
