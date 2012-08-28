@@ -54,7 +54,7 @@
       $forecast["img$i"] = $addzero.$forecast["img$i"];
 
       if ($forecast["img$i"] == '99') {$forecast["img$i"] = $forecast['img'.($i-1)];}
-      $images[] = $i%2 == $remainder ? "{$preurl}d{$forecast["img{$i}"]}.gif" : "{$preurl}n{$forecast["img{$i}"]}.gif";
+      $images[] = $i%2 == $remainder ? $preurl.'d'.$forecast["img{$i}"].'.gif' : $preurl.'n'.$forecast["img{$i}"].'.gif';
     }
     return $images;
   }
