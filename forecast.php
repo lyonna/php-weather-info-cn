@@ -109,9 +109,9 @@
     }
 
     for ($i = 1; $i < $length; $i++) {
-      $body .= '<li>'.printdate($date)."<br />\n";
-      $body .= '<img src="'.$images[($i*2-1)].'" /><img src="'.$images[($i*2)]."\" /><br />\n";
-      $body .= "{$forecast["weather$i"]} {$forecast["temp$i"]}<br />\n{$forecast["wind$i"]}</li>\n<br />";
+      $body .= '<li>'.printdate($date)."<br />";
+      $body .= '<img src="'.$images[($i*2-1)].'" /><img src="'.$images[($i*2)]."\" /><br />";
+      $body .= "{$forecast["weather$i"]} {$forecast["temp$i"]}<br />{$forecast["wind$i"]}</li><br />\n";
       $date += 86400;
     }
     return $body;
