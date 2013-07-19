@@ -50,8 +50,7 @@
 
     $preurl = 'http://www.weather.com.cn/m/i/icon_weather/42x30/';
     for ($i = 1; $i < 13; $i++) {
-      $addzero = strlen($forecast["img$i"]) == 1 ? '0' : '';
-      $forecast["img$i"] = $addzero.$forecast["img$i"];
+      $forecast["img$i"] = strlen($forecast["img$i"]) == 1 ? '0'.$forecast["img$i"] : $forecast["img$i"];
 
       if ($forecast["img$i"] == '99') {$forecast["img$i"] = $forecast['img'.($i-1)];}
       $images[] = $i%2 == $remainder ? $preurl.'d'.$forecast["img{$i}"].'.gif' : $preurl.'n'.$forecast["img{$i}"].'.gif';
